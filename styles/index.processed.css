@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "BonaSforza";
+  font-style: bold;
+  font-weight: 700;
+  src: url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaSforza-Bold.woff2") format("woff2"), url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaSforza-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BonaTitle";
+  font-style: bold;
+  font-weight: 700;
+  src: url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaTitle-Bold.woff2") format("woff2"), url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaTitle-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BonaTitle-Italic";
+  font-style: italic;
+  src: url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaTitle-Italic.woff2") format("woff2"), url("http://www.zlotamyslbozenkinadzis.pl/public_html/fonts/BonaDisplayPack/BonaTitle-Italic.woff") format("woff");
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 100vh;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid div:nth-child(odd) {
+  background-color: #ecdebf;
+}
+
+.grid div:nth-child(even) {
+  background-color: #ecdebf;
+}
+
+#lapka-black {
+  color: #ffffff;
+  margin-left: 5vw;
+  margin-top: 50vh;
+}
+
+#lapka-white {
+  color: #ffffff;
+  margin-left: 5vw;
+  margin-top: 36vh;
+}
+
+.logo p {
+  color: #f15d64;
+  text-align: right;
+  font-family: "BonaTitle-Italic";
+  font-size: 1.5vw;
+  padding: 1vw;
+}
+
+.mysl-1 p {
+  font-family: "BonaTitle-Bold";
+  color: #ffffff;
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 12vh;
+  margin-bottom: 4vh;
+}
+
+.mysl-1 p:first-child:first-letter {
+  color: #f15d64;
+  float: left;
+  font-size: 8vw;
+  line-height: 4.1vw;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family: "BonaSforza-Bold";
+}
+
+.mysl-2 p {
+  font-family: "BonaTitle-Bold";
+  font-size: 5vw;
+  color: white;
+  margin: 10vh;
+}
+
+.mysl-2 p:first-child:first-letter {
+  color: #f15d64;
+  float: left;
+  font-size: 8vw;
+  line-height: 4vw;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-left: 0px;
+  font-family: "BonaSforza-Bold";
+}
+
+@media (max-width: 320px) {
+  .mysl-1 p {
+    font-size: 20vw;
+    margin-left: 5vw;
+    margin-top: 12vh;
+    margin-bottom: 4vh;
+  }
+}
